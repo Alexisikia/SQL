@@ -1,0 +1,21 @@
+CREATE TABLE shoes(id INTEGER PRIMARY KEY, brand TEXT, make TEXT, aisle INTEGER, price INTEGER );
+
+INSERT INTO shoes VALUES(1, "Jordans", "ONES", 2, 150);
+INSERT INTO shoes VALUES(2, "Nike", "DUNKS", 5, 150);
+INSERT INTO shoes VALUES(3, "Adidas", "YEEZYS",1, 200);
+INSERT INTO shoes VALUES(4, "REEBOKS", "CLASSICS",3, 50);
+
+INSERT INTO shoes VALUES(5, "PUMA", "Fenty",4, 120);
+INSERT INTO shoes VALUES(6, "New Balance", "550",7, 110);
+INSERT INTO shoes VALUES(7, "Vans", "Skate Shoes",9, 60);
+INSERT INTO shoes VALUES(8, "Converse", "ALL STARS",8, 80);
+INSERT INTO shoes VALUES(9, "Under Armour", "under armours",6, 80);
+INSERT INTO shoes VALUES(10, "Gucci", "slides",10, 300);
+INSERT INTO shoes VALUES(11, "Timberlands", "Timb boots",12, 150);
+INSERT INTO shoes VALUES(12, "UGGS", "UGG BOOTS",11, 190);
+INSERT INTO shoes VALUES(13, "Steve Madden", "shoes",13, 200);
+INSERT INTO shoes VALUES(14, "Prada", "Boots",14, 500);
+INSERT INTO shoes VALUES(15, "Skechers", "Foam Walkers",15, 40);
+
+SELECT * FROM shoes ORDER BY price >= 500;
+SELECT SUM(price) FROM shoes;
